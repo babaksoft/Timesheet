@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 using System.Windows.Forms;
 using BabakSoft.Platform.Helpers;
 using Timesheet.Model;
 
-namespace Timesheet
+namespace Timesheet.Forms
 {
     public partial class TimesheetDetailsForm : Form
     {
@@ -26,7 +27,7 @@ namespace Timesheet
             txtName.DataBindings.Add("Text", Timesheet, "Name");
             txtDescription.DataBindings.Add("Text", Timesheet, "Description");
 
-            var path = Path.Combine("..", "..", "..", "Data", Timesheet.DataFile);
+            var path = Path.Combine(ConfigurationManager.AppSettings["DataRoot"], Timesheet.DataFile);
             txtLocation.Text = FileUtility.GetAbsolutePath(path);
         }
     }

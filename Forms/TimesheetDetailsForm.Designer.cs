@@ -1,4 +1,4 @@
-﻿namespace Timesheet
+﻿namespace Timesheet.Forms
 {
     partial class TimesheetDetailsForm
     {

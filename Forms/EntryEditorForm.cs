@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using BabakSoft.Platform.Common;
 using Timesheet.Model;
 
-namespace Timesheet
+namespace Timesheet.Forms
 {
     public partial class EntryEditorForm : Form
     {
