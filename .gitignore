@@ -1,0 +1,10 @@
+# Ignore conventional output paths for libraries and tests
+bin/
+obj/
+
+# Ignore VS internal db files
+.vs/
+*.user
+
+# Ignore timesheet data files
+/Data/*.json
